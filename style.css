@@ -129,7 +129,6 @@ nav {
 }
 
 
-
 #front .site-wrapper-inner {
   display: table-cell;
   vertical-align: middle;  
@@ -149,7 +148,7 @@ nav {
     font-size: 45px;
     font-weight: 300;
     color: saddlebrown;
-    text-shadow: 1px 1px 4px #36454f;
+    text-shadow: 1px 1px 1px #36454f;
 }
 
 /*
