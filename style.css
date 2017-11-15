@@ -52,6 +52,10 @@ nav {
     box-shadow: none;
 }
 
+#front-nav {
+    background: transparent;
+}
+
 
 /* CUSTOMIZE COVER
 --------------------------------------------------- */
@@ -75,12 +79,41 @@ nav {
  */
 
 #front {
+  position: relative;
+  margin: 0;
+}
+
+#front .background-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
   background-size: cover;
   margin: 0;
-  background: url(images/blue.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover; 
   -o-background-size: cover;
+}
+
+.background-img:not(#zero) {
+  display: none;
+}
+
+#zero {
+  background: url(images/blue.png) no-repeat center center fixed;
+
+}
+#one {
+  background: url(images/blue-2.png) no-repeat center center fixed;
+}
+#two {
+  background: url(images/blue-3.png) no-repeat center center fixed;
+}
+#three {
+  background: url(images/blue-4.png) no-repeat center center fixed;
+}
+#four {
+  background: url(images/blue-5.png) no-repeat center center fixed;
 }
 
 #front {
@@ -95,37 +128,6 @@ nav {
   min-height: 100%;
 }
 
-/*Fade background images */
-#front {
-	animation: home 20s ease-in-out infinite;
-	-webkit-animation: home 20s ease-in-out infinite;
-	-moz-animation: home 20s ease-in-out infinite;
-    
-}
-
-@keyframes home {
-	0% {background-image: url(images/blue.png)}
-	30% {background-image: url(images/blue-2.png)}
-	50% {background-image: url(images/blue-3.png)}
-	70% {background-image: url(images/blue-4.png)}
-	100% {background-image: url(images/blue-5.png)}
-}
-
-@-webkit-keyframes home {
-	0% {background-image: url(images/blue.png)}
-	30% {background-image: url(images/blue-2.png)}
-	50% {background-image: url(images/blue-3.png)}
-	70% {background-image: url(images/blue-4.png)}
-	100% {background-image: url(images/blue-5.png)}
-}
-
-@-moz-keyframes home {
-	0% {background-image: url(images/blue.png)}
-	30% {background-image: url(images/blue-2.png)}
-	50% {background-image: url(images/blue-3.png)}
-	70% {background-image: url(images/blue-4.png)}
-	100% {background-image: url(images/blue-5.png)}
-}
 
 
 #front .site-wrapper-inner {

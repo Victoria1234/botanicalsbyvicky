@@ -7,7 +7,12 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Botanicals by Vicky</title>
 
-    <!-- Bootstrap -->
+    <meta name="keywords" content="botanicals, painting, illustration, flowers, New Jersey, artist, botanical illustration">
+    <meta name="author" content="Vicky Kulikowski">
+    <meta property="og:description" content="Botanical artwork by Vicky Kulikowski, working in graphite, watercolor, and acrylic.">
+    <meta name="description" content="">
+   
+   <!-- Bootstrap -->
    <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -23,19 +28,22 @@
   </head>
     
   <body id="front">
-
     <div class="site-wrapper">
-
+      <div class="background-img" id="zero" ></div>
+      <div class="background-img" id="one" ></div>
+      <div class="background-img" id="two" ></div>
+      <div class="background-img" id="three" ></div>
+      <div class="background-img" id="four" ></div>
       <div class="site-wrapper-inner">
     
         <div class="cover-container">
                <!-- Fixed navbar -->
     
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="front-nav" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -82,10 +90,21 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       
       <script>
-      
           $(document).ready(function(){
-              $("#div2 img").delay("slow").fadeIn(1000);
+            // $("#div2 img").delay("slow").fadeIn(1000);
+            $("#one").fadeIn(3000 , function() {
+              $("#two").fadeIn(3000 , function() {
+                $("#three").fadeIn(3000 , function() {
+                  $("#four").fadeIn(3000 , function() {
+                })
+              })
+            })
+                
+    // Animation complete.
+              });
+             
           })
+
       </script>
  
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
