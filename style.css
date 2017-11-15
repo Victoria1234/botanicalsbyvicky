@@ -240,6 +240,11 @@ nav {
     font-weight: 300;
 }
 
+.jumbotron p .italic {
+  font-style: italic;
+  font-size: 16px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
