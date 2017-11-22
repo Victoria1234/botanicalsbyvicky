@@ -277,6 +277,10 @@ nav {
   .featurette-heading {
     font-size: 50px;
   }
+
+    .jumbotron p {
+        font-size: 21px;
+    }
 }
 
 @media (min-width: 992px) {
