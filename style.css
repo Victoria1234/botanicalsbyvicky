@@ -240,6 +240,11 @@ nav {
     font-weight: 300;
 }
 
+.interaction .caption p {
+  font-size: 21px !important;
+  font-weight: 200;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
