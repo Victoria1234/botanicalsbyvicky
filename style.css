@@ -202,6 +202,12 @@ nav {
     margin: 15px;
 }
 
+@media(max-width:992px) and (min-width: 767px){
+  .mobile-row {
+    display: inline-block;
+  }
+}
+
 /* Thin out the marketing headings */
 .featurette-heading {
     font-weight: 300;
