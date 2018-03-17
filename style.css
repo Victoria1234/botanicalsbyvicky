@@ -14,8 +14,20 @@ h1 {
     font-weight: 200;
 }
 
+h2 {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
+}
+
+a {
+  color:black;
+}
+
+a:hover {
+  color:black;
 }
 
 .navbar-default {
@@ -236,6 +248,61 @@ and (orientation: landscape),
  * Base structure
  */
 
+
+.navbar-brand img {
+  display: inline-block;
+  height:30px;
+  margin-top:-5px;
+  margin-right:10px;
+}
+
+#conserve h2 {
+  margin-bottom:25px;
+}
+
+#conserve .section {
+  text-align: center;
+}
+
+#conserve .section .text-box {
+  text-align: left;
+}
+#conserve .section:first-of-type img {
+  width:50%;
+  height: auto;
+  margin-bottom:-50px;
+}
+#conserve .section .text-box {
+  padding:50px 50px;
+}
+
+#conserve .section:first-of-type .text-box {
+  background-color: green;
+}
+
+#conserve .section:nth-child(2) img {
+  width:40%;
+  height: auto;
+  margin-bottom:-25px;
+}
+#conserve .section:nth-child(2) .text-box {
+  background-color: lightgreen;
+}
+
+#conserve .section:nth-child(3) img {
+  width:150px;
+  height: auto;
+  margin-bottom:-200px;
+  position: absolute;
+  right:15%;
+}
+
+
+
+
+#art .section:first-of-type {
+  height:700px;
+}
 
 /* ART PAGE
 ------------------------- */
