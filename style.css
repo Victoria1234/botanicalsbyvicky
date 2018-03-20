@@ -257,11 +257,15 @@ and (orientation: landscape),
 }
 
 #conserve h2 {
-  margin-bottom:25px;
+  margin-bottom:50px;
+  margin-top:50px;
 }
 
 #conserve .section {
   text-align: center;
+  margin-bottom:50px;
+  margin-top:50px;
+  position: relative;
 }
 
 #conserve .section .text-box {
@@ -277,7 +281,7 @@ and (orientation: landscape),
 }
 
 #conserve .section:first-of-type .text-box {
-  background-color: green;
+  background-color: #9cb625;
 }
 
 #conserve .section:nth-child(2) img {
@@ -286,15 +290,38 @@ and (orientation: landscape),
   margin-bottom:-25px;
 }
 #conserve .section:nth-child(2) .text-box {
-  background-color: lightgreen;
+  background-color: #c4df9b;
 }
 
 #conserve .section:nth-child(3) img {
-  width:150px;
+  width:200px;
   height: auto;
-  margin-bottom:-200px;
   position: absolute;
   right:15%;
+  top:0;
+  margin-top:-40px;
+}
+
+@media(max-width:767px){
+  #conserve .section:first-of-type img {
+    width:100%;
+    height: auto;
+    margin-bottom:0px;
+  }
+  #conserve .section:first-of-type .text-box  {
+    background-color: white;
+  }
+  #conserve .section:nth-child(3) img {
+    width:150px;
+    height: auto;
+    position: absolute;
+    right:0;
+    top:0;
+    margin-top:-40px;
+  }
+  #conserve .section:nth-child(3) h2 {
+    margin-top:0px;
+  }
 }
 
 
