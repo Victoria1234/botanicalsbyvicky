@@ -30,12 +30,32 @@ a:hover {
   color:black;
 }
 
-.navbar-default {
-  background-color: transparent;
-  border-color: transparent;
+.navbar-default, .navbar-default .container-fluid {
+  background-color: white;
+  border-color: white;
+  border:none;
+  box-shadow: none;
 }
 .navbar-default .navbar-toggle {
-  border-color: transparent;
+  border-color: white;
+}
+
+.navbar-default .menu-line {
+  height: .5px;
+  width: 275px;
+  background-color:#ebebeb;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: -10px;
+}
+
+@media(max-width:767px){
+  .navbar-default .menu-line {
+    display: none;
+  }
+  .navbar-default .container-fluid {
+    border-bottom: 1px solid #ebebeb;
+  }
 }
 
 .navbar-default .icon-bar:nth-child(3) {
