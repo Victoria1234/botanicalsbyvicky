@@ -327,9 +327,9 @@ and (orientation: landscape),
 
 
 
-#art .section:first-of-type {
+/* #art .section:first-of-type {
   height:700px;
-}
+} */
 
 /* ART PAGE
 ------------------------- */
@@ -338,7 +338,7 @@ and (orientation: landscape),
 }
 
 #art .section:first-of-type {
-  height:700px;
+  height:600px;
 }
 
 #art .section:first-of-type .text-box {
@@ -348,12 +348,19 @@ and (orientation: landscape),
 
 }
 
+#art .section:nth-child(3) {
+  display: table;
+  height:auto;
+  width: 100%;
+}
 #art .section:nth-child(3) .text-box {
   margin-top: 150px;
   left:0;
   right:0;
   margin-left:auto;
   margin-right:auto;
+  display: table-cell;
+  vertical-align: middle;
 
 }
 #art .section {
@@ -414,6 +421,25 @@ and (orientation: landscape),
     overflow-y:initial;
     margin-bottom:0px;
   }
+  #art .section:nth-child(3) {
+    display: block;
+  }
+  #art .section:nth-child(3) .text-box {
+    /* margin-top: 150px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto; */
+    display: block;
+    /* vertical-align: middle; */
+
+  }
+}
+
+footer img {
+  height: auto;
+  width: 50px;
+  margin-bottom: 10px;
 }
 
 /* Size top on art page */
