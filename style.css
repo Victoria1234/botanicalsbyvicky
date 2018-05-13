@@ -8,6 +8,8 @@ html {
 
 body {
     height: 100%;
+    line-height: 2;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -16,6 +18,7 @@ h1 {
 
 h2 {
   text-align: center;
+  margin-bottom:25px
 }
 
 img {
@@ -27,6 +30,12 @@ a {
 }
 
 a:hover {
+  color:black;
+}
+
+.navbar-default {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
   color:black;
 }
 
@@ -301,7 +310,7 @@ and (orientation: landscape),
 }
 
 #conserve .section:first-of-type .text-box {
-  background-color: #9cb625;
+  background-color: #c4df9b;
 }
 
 #conserve .section:nth-child(2) img {
@@ -309,8 +318,19 @@ and (orientation: landscape),
   height: auto;
   margin-bottom:-25px;
 }
+@media(max-width:992px){
+    #conserve .section:nth-child(2) img {
+      width: 75%;
+    }
+}
+
+@media(max-width:600px){
+    #conserve .section:nth-child(2) img {
+      width: 90%;
+    }
+}
 #conserve .section:nth-child(2) .text-box {
-  background-color: #c4df9b;
+  background-color: #e1efcd;
 }
 
 #conserve .section:nth-child(3) img {
@@ -332,7 +352,7 @@ and (orientation: landscape),
     background-color: white;
   }
   #conserve .section:nth-child(3) img {
-    width:150px;
+    width:100px;
     height: auto;
     position: absolute;
     right:0;
@@ -412,7 +432,7 @@ and (orientation: landscape),
   background-color: rgba(255, 255, 255, .8);
 }
 
-#art .inner-text {
+#art .inner-text, #interaction .inner-text {
   padding: 15px;
 }
 
@@ -469,6 +489,63 @@ footer img {
 
 /* INTERACTION DESIGN
 ----------------------------*/
+
+#interaction .ux-title {
+  padding:50px;
+  color:#9cb625;
+}
+
+
+#interaction .ux-title img {
+  width:100px;
+  height:auto;
+}
+
+#interaction .text-box {
+  background-color: rgba(255, 255, 255, .8);
+  margin:0px 50px;
+}
+
+#interaction .section .container {
+  padding:100px;
+}
+
+#interaction .tail {
+  position: absolute;
+  top:0;
+  right:0;
+  margin-top: -125px;
+
+  width:350px;
+  height:auto;
+
+}
+#interaction .section:nth-child(2) {
+    padding: 100px 0px;
+  background-image:  url("images/user-testing.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding:150px 0px;
+}
+
+#interaction .section:nth-child(4) {
+  background-color:#55b0d0;
+  color:white;
+}
+#interaction .section:nth-child(4) .container {
+  position: relative;
+}
+#interaction .section:nth-child(4) h2 {
+  text-align: left;
+}
+#interaction .section:nth-child(6) {
+  background-color: #d3e7b4;
+}
+.img-responsive {
+  width:100%;
+  height:auto;
+}
 
 
 /* RESPONSIVE CSS
