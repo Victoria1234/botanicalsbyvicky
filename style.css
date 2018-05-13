@@ -37,6 +37,7 @@ a:hover {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   color:black;
+  margin-bottom:0px;
 }
 
 .navbar-default, .navbar-default .container-fluid {
@@ -95,7 +96,10 @@ a:hover {
 }
 
 
-
+#art footer, #conservation footer, #interaction footer {
+  padding-top:50px;
+  padding-bottom:25px;
+}
 footer {
   bottom: 0;
   text-align: center;
@@ -432,7 +436,7 @@ and (orientation: landscape),
   background-color: rgba(255, 255, 255, .8);
 }
 
-#art .inner-text, #interaction .inner-text {
+#art .inner-text {
   padding: 15px;
 }
 
@@ -491,7 +495,7 @@ footer img {
 ----------------------------*/
 
 #interaction .ux-title {
-  padding:50px;
+  padding:10px;
   color:#9cb625;
 }
 
@@ -501,6 +505,9 @@ footer img {
   height:auto;
 }
 
+#interaction .inner-text {
+  padding: 50px;
+}
 #interaction .text-box {
   background-color: rgba(255, 255, 255, .8);
   margin:0px 50px;
@@ -510,21 +517,20 @@ footer img {
   padding:100px;
 }
 
+
 #interaction .tail {
   position: absolute;
   top:0;
   right:0;
   margin-top: -125px;
-
   width:350px;
   height:auto;
 
 }
 #interaction .section:nth-child(2) {
-    padding: 100px 0px;
   background-image:  url("images/user-testing.jpg");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: top right;
   background-size: cover;
   padding:150px 0px;
 }
@@ -542,11 +548,46 @@ footer img {
 #interaction .section:nth-child(6) {
   background-color: #d3e7b4;
 }
-.img-responsive {
+#interaction .img-responsive {
   width:100%;
   height:auto;
 }
 
+
+@media (max-width:992px){
+  #interaction .section .container {
+    padding:50px;
+  }
+  #interaction .tail {
+    width:200px;
+    margin-top:-75px;
+  }
+}
+@media (max-width:767px){
+  #interaction .section:nth-child(2) .container {
+    padding:15px;
+
+  }
+  #interaction .section:nth-child(2) {
+    padding:75px 0px;
+  }
+  #interaction .tail {
+    width:150px;
+    margin-top:-50px;
+  }
+}
+@media (max-width:600px){
+  #interaction .inner-text {
+    padding:25px;
+  }
+  #interaction .text-box {
+    margin:0px;
+  }
+  #interaction .section:nth-child(2) {
+    padding:25px 0px;
+  }
+
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
